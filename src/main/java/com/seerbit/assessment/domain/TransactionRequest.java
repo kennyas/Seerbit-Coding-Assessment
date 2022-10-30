@@ -7,8 +7,8 @@ import java.time.Instant;
 
 @Data
 public class TransactionRequest {
-    @NotNull(message = "timestamp is required")
+    @NotNull(message = "timestamp is mandatory")
     private Instant timestamp;
-    @NotNull(message = "amount is required")
+    @NotNull(message = "transaction amount is mandatory")
     private Double amount;
 }
