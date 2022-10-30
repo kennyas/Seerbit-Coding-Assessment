@@ -9,9 +9,9 @@
 ``` docker-compose up -d ```
 
 ## Explore the App via HTTP Rest Calls using Postman or other HTTP Client 
-	``` POST http://localhost:8080/transaction
+     POST http://localhost:8080/transaction
       GET http://localhost:8080/statistics 
-     DELETE http://localhost:8080/transaction ```
+     DELETE http://localhost:8080/transaction 
 
 ## Lastly, stop up the docker container using
 ``` docker-compose down ```
