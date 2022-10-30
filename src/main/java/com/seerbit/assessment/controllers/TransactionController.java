@@ -16,6 +16,11 @@ public class TransactionController {
     private final TransactionService transactionService;
     private final StatisticService statisticService;
 
+    public TransactionController(TransactionService transactionService, StatisticService statisticService) {
+        this.transactionService = transactionService;
+        this.statisticService = statisticService;
+    }
+
     @PostMapping("/transaction")
     public ResponseEntity<?> createTransaction(@RequestBody @Valid TransactionRequest transactionRequest) {
         return transactionService.createTransaction(transactionRequest);

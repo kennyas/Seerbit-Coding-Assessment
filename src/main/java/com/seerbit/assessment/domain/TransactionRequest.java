@@ -11,4 +11,24 @@ public class TransactionRequest {
     private Instant timestamp;
     @NotNull(message = "transaction amount is mandatory")
     private Double amount;
+
+    // Getter
+    public Instant getTimestamp() {
+        return timestamp;
+    }
+
+    // Setter
+    public void setTimestamp(Instant newTimestamp) {
+        this.timestamp = newTimestamp;
+    }
+
+    // Getter
+    public double getAmount() {
+        return amount;
+    }
+
+    // Setter
+    public void setAmount(double newAmount) {
+        this.amount = newAmount;
+    }
 }

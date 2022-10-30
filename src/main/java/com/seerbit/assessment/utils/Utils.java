@@ -3,6 +3,7 @@ package com.seerbit.assessment.utils;
 import com.seerbit.assessment.domain.TransactionRequest;
 import com.seerbit.assessment.exception.TransactionTimeException;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.logging.Log;
 
 import java.time.Instant;
 
