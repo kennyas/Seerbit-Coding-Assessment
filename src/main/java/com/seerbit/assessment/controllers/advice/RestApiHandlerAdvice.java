@@ -17,14 +17,14 @@ public class RestApiHandlerAdvice extends ResponseEntityExceptionHandler {
             TransactionTimeException.class,
     })
     public ResponseEntity<?> restApiHandler(final TransactionTimeException ex) {
-        log.error("API Exception handled {}", ex);
+        logger.error("API Exception handled {}", ex);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
     @ExceptionHandler({
             HttpMessageConversionException.class,
     })
     public ResponseEntity<?> restApiHandler2(final HttpMessageConversionException ex) {
-        log.error("API Exception handled {}", ex);
+        logger.error("API Exception handled {}", ex);
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
     }
 }
